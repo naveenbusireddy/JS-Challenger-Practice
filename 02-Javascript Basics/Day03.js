@@ -73,6 +73,17 @@ function valuePresentInSet(set, val) {
 }
 console.log(valuePresentInSet(new Set([1, 2, 3]), 2));
 console.log(valuePresentInSet(new Set([123]), 2));
-console.log(valuePresentInSet(new Set(['1', '2', '3']), '2'));
-console.log(valuePresentInSet(new Set('123'), '2'));
+console.log(valuePresentInSet(new Set(["1", "2", "3"]), "2"));
+console.log(valuePresentInSet(new Set("123"), "2"));
 
+////////////////////////////////////////////
+// Check if a number is a whole number
+// Write a function that takes a number (a) as argument
+// If a is a whole number (has no decimal place), return true
+// Otherwise, return false
+function wholeNumber(a) {
+  return Number.isInteger(a);
+}
+console.log(wholeNumber(4));
+console.log(wholeNumber(1.123));
+console.log(wholeNumber(10.48));
